@@ -4,5 +4,8 @@
     "Salary": "Salary",
     "City": "City",
     "PublicationDate": "Publication Date",
-    "Views": "No. of Views"
+    "Views": "No. of Views",
+
+
+    "salaryFormat": "{number, number} million"
 }

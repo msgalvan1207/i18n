@@ -35,16 +35,16 @@ const JobsList = () => {
 
   const headerColor = ()=>{
     if (navigator.language === 'en'){
-      return 'bg-dark'
+      return 'table-dark'
     } else if (navigator.language === 'es'){
-      return 'bg-primary'
+      return ' table-light'
     }
   }
 
   return (
     <div>
       <table className="table">
-        <thead className={'thead-dark'}>
+        <thead className={headerColor()}>
           <tr>
             <th scope="col">#</th>
             <th scope="col"><FormattedMessage id='Position'/></th>

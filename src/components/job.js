@@ -1,13 +1,16 @@
 import React from "react";
-import { FormattedDate, FormattedNumber } from "react-intl";
+import { FormattedDate, FormattedMessage, FormattedNumber } from "react-intl";
 
 const Job = (props) => {
+
+
+
   return (
     <tr>
       <th scope="row">{props.offer.id}</th>
       <td>{props.offer.name}</td>
       <td>{props.offer.company}</td>
-      <td><FormattedNumber value={props.offer.salary} unit='million'></FormattedNumber></td>
+      <td><FormattedMessage id='salaryFormat' values={{number:props.offer.salary}}/></td>
       <td>{props.offer.city}</td>
       <td>
         <FormattedDate
